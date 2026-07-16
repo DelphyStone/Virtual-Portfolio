@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TD Stone - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="headerstyle.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="sectionstyle.css">
 </head>
 
 <body>
@@ -42,6 +43,27 @@
             </div>
         </div>
     </nav>
+
+    <section id="profile">
+        <div class="section_pic_containter">
+            <img src="ME.webp" alt="TD Stone profile picture">
+        </div> 
+
+        <div class="Section_Text">
+            <p class="section_Text_p1">Hello, I'm</p>
+            <h1 class="title">Delphy Stone</h1>
+            <p class="section_Text_p2">Frontend Developer</p>
+            <div class="btn_container">
+                <button class=" btn btn-color-2" onclick="window.open('Stone TD CV.pdf', '_blank')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="ICONS/LinkedIn.png" class="Icon" onclick="window.open('https://www.linkedin.com/in/tshegofatso-stone-390085347/', '_blank')">
+                <img src="ICONS/GitHub.png" class="Icon" onclick="window.open('https://github.com/DelphyStone', '_blank')">
+            </div>
+        </div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
