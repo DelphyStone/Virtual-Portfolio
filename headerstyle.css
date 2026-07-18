@@ -10,6 +10,7 @@
 body
 {
     font-family: "Poppins", sans-serif;
+    padding-top: 17vh;
 }
 
 html
@@ -40,7 +41,13 @@ nav
 {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;  /*viewport height, takes 17%of the whole screen*/
+    height: 12vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* or whatever color you want behind it */
+    z-index: 1000;
 } 
 
 .nav-links

@@ -1,0 +1,50 @@
+#Projects
+{
+    padding-top: 5rem;
+}
+
+.experience-sub-title
+{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.details-container
+{
+    padding: 1.5rem;
+    margin-top: 2rem;
+    flex: 0 1 350px;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    text-align: center;
+}
+
+.color-container
+{
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+
+.project-img
+{
+    border-radius: 2rem;
+    width: 200px;
+    height: 200px;
+}
+
+.project-title
+{
+    margin: 1rem;
+    color: black;
+}
+
+.about-containers
+{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}

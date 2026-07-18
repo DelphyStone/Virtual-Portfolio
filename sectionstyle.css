@@ -2,7 +2,7 @@
 
 section
 {
-    padding-top: 4vh;
+    padding-top: 8vh;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -91,7 +91,7 @@ section
     display: flex;
     justify-content: center;
     gap: 1rem;
-
+    margin-top: 2rem;
 }
 
 .btn
@@ -138,4 +138,15 @@ section
 .btn_container
 {
     gap: 1rem;
+}
+
+.text-container
+{
+    text-align: center;
+}
+
+.about-details-container
+{
+    display: flex;
+    justify-content: center;
 }
