@@ -46,7 +46,7 @@ nav
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white; /* or whatever color you want behind it */
+    background-color: white; 
     z-index: 1000;
 } 
 
@@ -162,12 +162,5 @@ a:hover
 .hamburger-icon span:first-child
 {
     transform: none;
-}
-.hamburger-icon span:first-child
-{
-    opacity: 1;;
-}
-.hamburger-icon span:first-child
-{
-    transform: none;
+    opacity: 1;
 }

@@ -1,0 +1,57 @@
+#Contact
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-container-icon
+{
+    padding-top: 2rem;
+}
+
+.contact-info-upper-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+footer
+{
+    height:5vh;
+    padding-top: 2rem;
+    margin: 0 1rem;
+}
+
+footer p
+{
+    text-align: center;
+}
+
+form input, form textarea
+{
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    background: rgb(250,250,250);
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form button
+{
+    width: 100%;
+}
+
+.contact-left,
+.contact-right
+{
+    flex: 1;
+}
+

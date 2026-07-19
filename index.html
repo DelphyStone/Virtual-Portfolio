@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="sectionstyle.css">
     <link rel="stylesheet" href="Projectstyle.css">
     <link rel="stylesheet" href="Education.css">
+    <link rel="stylesheet" href="Contact.css"> 
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <div class="logo">Delphy Stone</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#profile">Home</a></li>     <!--href to link each section-->  
+                <li><a href="#profile">Home</a></li>  
                 <li><a href="#About">About</a></li>      
                 <li><a href="#Education">Education</a></li>      
                 <li><a href="#Projects">Projects</a></li>      
@@ -27,7 +28,7 @@
 
     <nav id="hamburger-nav">
         <div class="logo">Delphy Stone</div>
-        <div class=hamburger-menu>
+        <div class= "hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -47,7 +48,7 @@
     </nav>
 
     <section id="profile">
-        <div class="section_pic_containter">
+        <div class="section_pic_container">
             <img src="ME.webp" alt="TD Stone profile picture">
         </div> 
 
@@ -58,22 +59,21 @@
             <p class="section_Text_p1">Code. Create. Innovate</p>
 
             <div class="btn_container">
-                <button class=" btn btn-color-2" onclick="window.open('Stone TD CV.pdf', '_blank')">Download CV</button>
+                <button class="btn btn-color-2" onclick="window.open('Stone TD CV.pdf', '_blank')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="ICONS/LinkedIn.png" class="Icon" onclick="window.open('https://www.linkedin.com/in/tshegofatso-stone-390085347/', '_blank')">
-                <img src="ICONS/GitHub.png" class="Icon" onclick="window.open('https://github.com/DelphyStone', '_blank')">
+                <img src="ICONS/LinkedIn.png" alt="LinkedIn" class="Icon" onclick="window.open('https://www.linkedin.com/in/tshegofatso-stone-390085347/', '_blank')">
+                <img src="ICONS/GitHub.png"  alt="GitHub" class="Icon" onclick="window.open('https://github.com/DelphyStone', '_blank')">
             </div>
         </div>
     </section>
     
     <section id="About">
-        <p class="section_Text_p1">Get to know more</p>
-        <h1 class="title">About Me</h1>
+        <h1 class="title about-title">About Me</h1>
         <div class="section-container">
             <div class="about-details-container">
-                <div class="text-container"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt illum, unde deserunt accusantium tenetur provident consectetur quisquam ducimus hic reprehenderit? Reprehenderit debitis doloremque asperiores voluptatum modi ea, quo adipisci. Maiores odit laudantium voluptatum nobis quasi placeat mollitia. Ipsa illo nesciunt officia nihil ducimus minus accusamus cumque dolorum, aliquid magnam quam.</div>
+                <div class="text-container"><P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt illum, unde deserunt accusantium tenetur provident consectetur quisquam ducimus hic reprehenderit? Reprehenderit debitis doloremque asperiores voluptatum modi ea, quo adipisci. Maiores odit laudantium voluptatum nobis quasi placeat mollitia. Ipsa illo nesciunt officia nihil ducimus minus accusamus cumque dolorum, aliquid magnam quam.</P></div>
             </div>
         </div>
     </section>
@@ -91,7 +91,7 @@
                         <div class="date">
                             <p>
                                 <img src="./ICONS/calender.png" alt="calender icon" class="date-icon">
-                                        2024-2026
+                                2024-2026
                             </p>
                         </div> 
                     </div>
@@ -147,6 +147,46 @@
             </div>
         </div>
     </section>
+    
+    <section id="Contact">
+        <h1 class="title">Contact Me</h1>
+        <p class="section_Text_p1">Let's work together</p>
+
+        <div class="contact-info-upper-container">
+            <div class="contact-left">
+                <h1>Get in touch</h1>
+                <p class="contact_text">I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to drop me a message!</p>
+                <div class="contact-container-icon">
+
+                    <a href="https://www.linkedin.com/in/tshegofatso-stone-390085347/" target="_blank" rel="noopener">
+                        <img src="./ICONS/LinkedIn.png" alt="LinkedIn Icon" class="Icon">
+                    </a>
+
+                    <a href="https://github.com/DelphyStone" target="_blank" rel="noopener">
+                        <img src="./ICONS/GitHub.png" alt="GitHub Icon" class="Icon">
+                    </a>
+                   
+                    <a href="mailto:tshegostone31@gmail.com">
+                        <img src="./ICONS/email.png" alt="Email icon" class="Icon">
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6"  placeholder="Your Message"></textarea>
+                    <button class="btn btn-color-1" type="submit">Send Message</button>        
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &#169; 2026 <b>Delphy Stone</b>. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

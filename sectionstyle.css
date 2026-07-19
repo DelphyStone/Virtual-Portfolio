@@ -21,10 +21,15 @@ section
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 50vh;
 }
 
-.section_pic_containter
+.about-title
+{
+    padding-top: 5rem;
+}
+
+.section_pic_container
 {
     display: flex;
     height: 400px;
@@ -32,7 +37,7 @@ section
     margin: auto 0;
 }
 
-.section_pic_containter img
+.section_pic_container img
 {
     width: 100%;
     height: 100%;
@@ -82,6 +87,12 @@ section
 {
     cursor: pointer;
     height: 2rem;
+    transition: transform 0.5s;
+}
+
+.Icon:hover
+{
+    transform: translateY(-5px);
 }
 
 /*BUTTONS*/
@@ -112,6 +123,7 @@ section
 {
     cursor: pointer;
 }
+
 .btn-color-1,.btn-color-2:hover
 {
    background: rgb(53, 53, 53);
@@ -133,11 +145,6 @@ section
 {
     border: rgb(255, 255, 255) 0.1rem solid;
      background: rgb(202, 152, 174);
-}
-
-.btn_container
-{
-    gap: 1rem;
 }
 
 .text-container

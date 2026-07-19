@@ -4,12 +4,6 @@
     width:1.5rem;
 }
 
-#Education .article-container
-{
-    display:flex;
-    flex-direction: column;
-}
-
 article
 {
     display: flex;
@@ -52,9 +46,4 @@ article p
 {
     padding-left: 5rem;
     padding-top: 1.5rem;
-}
-
-.education-details-container
-{
-    cursor: pointer;
 }
