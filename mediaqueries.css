@@ -1,3 +1,18 @@
+
+@media screen and (max-width: 1400px)
+{
+    #profile
+    {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-details-container
+    {
+        flex-wrap: wrap;
+    }
+}
+
 @media screen and (max-width: 1200px)
 {
     #desktop-nav
@@ -8,5 +23,64 @@
      #hamburger-nav
     {
         display: flex;
+    }
+
+    #Education, .education-details-container
+    {
+        margin-top: 2rem;
+    }
+
+    #profile, .section-container
+    {
+        display: block;
+    }
+
+    section, .section-container
+    {
+        height: fit-content;
+    }
+
+    section
+    {
+        margin: 0 5%;
+    }
+
+    .section_pic_container
+    {
+       display: none;
+    }
+
+    .about-details-container
+    {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    #Contact, footer
+    {
+        height: fit-content;
+    }
+
+    #profile
+    {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    article
+    {
+        font-size: 1rem;
+    }
+
+    .about-details-container, .contact-info-upper-container, .btn_container
+    {
+        flex-wrap: wrap;
+    }
+    
+    .nav-links li a
+    {
+        font-size: 1rem;
     }
 }
