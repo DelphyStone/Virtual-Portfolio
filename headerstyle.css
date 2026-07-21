@@ -3,10 +3,14 @@
 
 body
 {
-   /* background-color: bisque;*/
    background-color: #f2b1dd ;
-
 }
+
+#desktop-nav, #hamburger-nav
+{
+    background-color: #edcde3 ;
+}
+
 *
 {
     margin: 0;
