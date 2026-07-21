@@ -1,0 +1,137 @@
+ :root
+ {
+    --ink: #0B0E14;
+    --ink-raised: #10141C;
+    --text: #E8EAED;
+    --text-dim: #5B6472;
+    --accent: #ff1493;
+    --accent-dim: #ed0886;
+    --amber: #F5A623;
+}
+ 
+#loader
+{
+    position: fixed;
+    inset: 0;
+    background: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loader-inner
+{
+    width: min(420px, 86vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;  
+}
+ 
+  /* Initials */
+.initials-wrap
+{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    height: 92px;
+}
+ 
+.initials
+{
+    font-size: clamp(52px, 12vw, 76px);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    text-shadow: 0 0 24px var(--accent-dim);
+    position: relative;
+}
+ 
+.initials .char
+{
+    opacity: 0;
+    display: inline-block;
+    animation: reveal 0.35s ease forwards;
+}
+
+.initials .char:nth-child(1){ animation-delay: 0.15s; }
+.initials .char:nth-child(2){ animation-delay: 0.55s; color: var(--accent); }
+ 
+@keyframes reveal
+{
+    from{ opacity: 0; transform: translateY(6px); filter: blur(4px); }
+    to{ opacity: 1; transform: translateY(0); filter: blur(0); }
+  }
+ 
+.cursor
+{
+    display: inline-block;
+    width: 3px;
+    height: 0.85em;
+    background: var(--accent);
+    margin-left: 6px;
+    animation: blink 0.9s steps(1) infinite;
+    vertical-align: middle;
+}
+
+  @keyframes blink
+{ 
+    50%{ opacity: 0; } 
+}
+ 
+  /* Progress */
+.progress-track
+{
+    width: 100%;
+    height: 3px;
+    background: var(--ink-raised);
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+ 
+.progress-fill
+{
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent), #ed0886);
+    box-shadow: 0 0 10px var(--accent);
+    transition: width 0.25s ease-out;
+}
+ 
+.meta-row
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 12px;
+    color: var(--text-dim);
+    letter-spacing: 0.03em;
+}
+ 
+#status
+{
+    color: var(--text-dim);
+    min-width: 1px;
+}
+ 
+#status .prompt
+{
+    color: var(--accent);
+}
+ 
+#percent
+{
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+  }
+ 
+  /* Reduced motion */
+@media (prefers-reduced-motion: reduce)
+{
+    .initials .char{ animation: none; opacity: 1; }
+    .cursor{ animation: none; }
+    .progress-fill{ transition: none; }
+}

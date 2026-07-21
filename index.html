@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,253 +10,293 @@
     <link rel="stylesheet" href="sectionstyle.css">
     <link rel="stylesheet" href="Projectstyle.css">
     <link rel="stylesheet" href="Education.css">
-    <link rel="stylesheet" href="Contact.css"> 
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="Animations.css">
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Delphy Stone</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#profile">Home</a></li>  
-                <li><a href="#About">About</a></li>      
-                <li><a href="#Education">Education</a></li>      
-                <li><a href="#Projects">Projects</a></li>      
-                <li><a href="#Contact">Contact</a></li>   
-            </ul>
-        </div>
-    </nav>
-
-    <nav id="hamburger-nav">
-        <div class="logo">Delphy Stone</div>
-        <div class= "hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div id="loader" role="status" aria-live="polite" aria-label="Portfolio loading">
+        <div class="loader-inner">
+            <div class="initials-wrap">
+                <div class="initials" aria-hidden="true">
+                    <span class="char">T</span><span class="char">D</span><span class="char">S</span><span
+                        class="cursor"></span>
+                </div>
             </div>
 
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <div class="meta-row">
+                <span id="status"><span class="prompt">&gt;</span> initializing</span>
+                <span id="percent">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio-content" style="opacity: 0; visibility:hidden;">
+        <nav id="desktop-nav">
+            <div class="logo">Delphy Stone</div>
             <div>
-                <ul class="menu-links">
-                    <li><a href="#profile" onclick="toggleMenu()">Home</a></li>     <!--href to link each section-->  
-                    <li><a href="#About" onclick="toggleMenu()">About</a></li>      
-                    <li><a href="#Education" onclick="toggleMenu()">Education</a></li>      
-                    <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>      
-                    <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+                <ul class="nav-links">
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Delphy Stone</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div>
+                    <ul class="menu-links">
+                        <li><a href="#profile" onclick="toggleMenu()">Home</a></li> <!--href to link each section-->
+                        <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                        <li><a href="#Education" onclick="toggleMenu()">Education</a></li>
+                        <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                        <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
                     </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <section id="profile">
-        <div class="section_pic_container">
-            <img src="ME.webp" alt="TD Stone profile picture">
-        </div> 
-
-        <div class="Section_Text">
-            <p class="section_Text_p1">Hello, I'm</p>
-            <h1 class="title">Delphy Stone</h1>
-            <p class="section_Text_p2">And I am a <span class="typing"></span></p>
-            <p class="section_Text_p1">Code. Create. Innovate</p>
-
-            <div class="btn_container">
-                <button class="btn btn-color-2" onclick="window.open('Stone TD CV.pdf', '_blank')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="ICONS/LinkedIn.png" alt="LinkedIn" class="Icon" onclick="window.open('https://www.linkedin.com/in/tshegofatso-stone-390085347/', '_blank')">
-                <img src="ICONS/GitHub.png"  alt="GitHub" class="Icon" onclick="window.open('https://github.com/DelphyStone', '_blank')">
-            </div>
-        </div>
-    </section>
-    
-    <section id="About" class="container1">
-        <h1 class="title about-title">About Me</h1>
-        <div class="section-container">
-            <div class="about-details-container">
-                <div class="text-container"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt illum, unde deserunt accusantium tenetur provident consectetur quisquam ducimus hic reprehenderit? Reprehenderit debitis doloremque asperiores voluptatum modi ea, quo adipisci. Maiores odit laudantium voluptatum nobis quasi placeat mollitia. Ipsa illo nesciunt officia nihil ducimus minus accusamus cumque dolorum, aliquid magnam quam.</p></div>
+        <section id="profile">
+            <div class="section_pic_container">
+                <img src="ME.webp" alt="TD Stone profile picture">
             </div>
 
-            <div class="technical-skills">
-                <h3 class="technical-title">Technical Skills</h3>
+            <div class="Section_Text">
+                <p class="section_Text_p1">Hello, I'm</p>
+                <h1 class="title">Delphy Stone</h1>
+                <p class="section_Text_p2">And I am a <span class="typing"></span></p>
+                <p class="section_Text_p1">Code. Create. Innovate</p>
 
-                <div class="technical-bars">
-                    <div class="bar"><img src="ICONS/HTML.png" alt="HTML icon" class="tech-icon">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>95%</span>
+                <div class="btn_container">
+                    <button class="btn btn-color-2" onclick="window.open('Stone TD CV.pdf', '_blank')">Download
+                        CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#Contact'">Contact Info</button>
+                </div>
+
+                <div id="socials-container">
+                    <img src="ICONS/LinkedIn.png" alt="LinkedIn" class="Icon"
+                        onclick="window.open('https://www.linkedin.com/in/tshegofatso-stone-390085347/', '_blank')">
+                    <img src="ICONS/GitHub.png" alt="GitHub" class="Icon"
+                        onclick="window.open('https://github.com/DelphyStone', '_blank')">
+                </div>
+            </div>
+        </section>
+
+        <section id="About" class="container1">
+            <h1 class="title about-title">About Me</h1>
+            <div class="section-container">
+                <div class="about-details-container">
+                    <div class="text-container">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt illum, unde deserunt
+                            accusantium tenetur provident consectetur quisquam ducimus hic reprehenderit? Reprehenderit
+                            debitis doloremque asperiores voluptatum modi ea, quo adipisci. Maiores odit laudantium
+                            voluptatum nobis quasi placeat mollitia. Ipsa illo nesciunt officia nihil ducimus minus
+                            accusamus cumque dolorum, aliquid magnam quam.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="technical-skills">
+                    <h3 class="technical-title">Technical Skills</h3>
+
+                    <div class="technical-bars">
+                        <div class="bar"><img src="ICONS/HTML.png" alt="HTML icon" class="tech-icon">
+                            <div class="info">
+                                <span>HTML</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-line html">
+                                <span></span>
+                            </div>
                         </div>
-                        <div class="progress-line html">
-                            <span></span>
+
+                        <div class="bar"><img src="ICONS/CSS.png" alt="CSS icon" class="tech-icon">
+                            <div class="info">
+                                <span>CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-line css">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="bar"><img src="ICONS/Python.png" alt="Python icon" class="tech-icon">
+                            <div class="info">
+                                <span>Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-line python">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="bar"><img src="ICONS/CSharp.png" alt="c# icon" class="tech-icon">
+                            <div class="info">
+                                <span>C#</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-line c-sharp">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="bar"><img src="ICONS/SQL.png" alt="sql icon" class="tech-icon">
+                            <div class="info">
+                                <span>SQL</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-line sql">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="bar"><img src="ICONS/C++.png" alt="Python icon" class="tech-icon">
+                            <div class="info">
+                                <span>C++</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-line c-plus">
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="Education">
+            <h1 class="title">Education</h1>
+            <p class="section_Text_p1">Academic background and qualification</p>
+            <div class="education-details-container">
+                <div class="article-container">
+                    <article>
+                        <img src="./ICONS/Education.png" alt="Education Icon" class="Education-icon">
+                        <div>
+                            <h2 class="education-sub-title">BSc Information Technology</h2>
+                            <h3>North-West University - Potchefstroom, South Africa</h3>
+                            <div class="date">
+                                <p>
+                                    <img src="./ICONS/calender.png" alt="calender icon" class="date-icon">
+                                    2024-2026
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="Key-courses">
+                <h3>Key Courses</h3>
+                <ul class="course-list">
+                    <li>Advanced Databases</li>
+                    <li>Data Structure And Algorithms</li>
+                    <li>Structured Programming</li>
+                    <li>User Interface Programming</li>
+                    <li>Systems Analysis And Design</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Computer Networks</li>
+                    <li>Statistics</li>
+                    <li>Decision Support Systems</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Projects">
+            <h1 class="title">Projects</h1>
+            <p class="section_Text_p1">Browse some of my recent work</p>
+            <div class="project-details-container">
+                <div class="about-containers">
+
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./PROJECTS/zero-waste-hub.png" alt="Project:Zero-waste hub" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Zero-Waste Hub</h2>
+                        <div class="btn_container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'">GitHub</button>
+
+                            <button class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com'">Live Demo</button>
                         </div>
                     </div>
 
-                    <div class="bar"><img src="ICONS/CSS.png" alt="CSS icon" class="tech-icon">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>90%</span>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./PROJECTS/roam.png" alt="Project:Roam Za" class="project-img">
                         </div>
-                        <div class="progress-line css">
-                            <span></span>
+                        <h2 class="experience-sub-title project-title">Roam Za</h2>
+                        <div class="btn_container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'">GitHub</button>
+
+                            <button class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com'">Live Demo</button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="bar"><img src="ICONS/Python.png" alt="Python icon" class="tech-icon">
-                        <div class="info">
-                            <span>Python</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="progress-line python">
-                            <span></span>
-                        </div>
-                    </div>
+        <section id="Contact">
+            <h1 class="title">Contact Me</h1>
+            <p class="section_Text_p1">Let's work together</p>
 
-                    <div class="bar"><img src="ICONS/CSharp.png" alt="c# icon" class="tech-icon">
-                        <div class="info">
-                            <span>C#</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="progress-line c-sharp">
-                            <span></span>
-                        </div>
-                    </div>
+            <div class="contact-info-upper-container">
+                <div class="contact-left">
+                    <h1>Get in touch</h1>
+                    <p class="contact_text">I'm always interested in hearing about new projects and opportunities.
+                        Whether you have a question or just want to say hi, feel free to drop me a message!</p>
+                    <div class="contact-container-icon">
 
-                    <div class="bar"><img src="ICONS/SQL.png" alt="sql icon" class="tech-icon">
-                        <div class="info">
-                            <span>SQL</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="progress-line sql">
-                            <span></span>
-                        </div>
-                    </div>
+                        <a href="https://www.linkedin.com/in/tshegofatso-stone-390085347/" target="_blank"
+                            rel="noopener">
+                            <img src="./ICONS/LinkedIn.png" alt="LinkedIn Icon" class="Icon">
+                        </a>
 
-                    <div class="bar"><img src="ICONS/C++.png" alt="Python icon" class="tech-icon">
-                        <div class="info">
-                            <span>C++</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="progress-line c-plus">
-                            <span></span>
-                        </div>
+                        <a href="https://github.com/DelphyStone" target="_blank" rel="noopener">
+                            <img src="./ICONS/GitHub.png" alt="GitHub Icon" class="Icon">
+                        </a>
+
+                        <a href="mailto:tshegostone31@gmail.com">
+                            <img src="./ICONS/Email.png" alt="Email icon" class="Icon">
+                        </a>
                     </div>
 
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <section id="Education">
-        <h1 class="title">Education</h1>
-        <p class="section_Text_p1">Academic background and qualification</p>
-        <div class="education-details-container">
-            <div class="article-container">
-                <article>
-                    <img src="./ICONS/Education.png" alt="Education Icon" class="Education-icon">
-                    <div>
-                        <h2 class="education-sub-title">BSc Information Technology</h2>
-                        <h3>North-West University - Potchefstroom, South Africa</h3>
-                        <div class="date">
-                            <p>
-                                <img src="./ICONS/calender.png" alt="calender icon" class="date-icon">
-                                2024-2026
-                            </p>
-                        </div> 
-                    </div>
-                </article>       
-            </div>
-        </div>
-
-        <div class="Key-courses">
-            <h3>Key Courses</h3>
-            <ul class="course-list">
-                <li>Advanced Databases</li>
-                <li>Data Structure And Algorithms</li>
-                <li>Structured Programming</li>
-                <li>User Interface Programming</li>
-                <li>Systems Analysis And Design</li>
-                <li>Artificial Intelligence</li>
-                <li>Computer Networks</li>
-                <li>Statistics</li>
-                <li>Decision Support Systems</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="Projects">
-        <h1 class="title">Projects</h1>
-        <p class="section_Text_p1">Browse some of my recent work</p>
-        <div class="project-details-container">
-            <div class="about-containers">
-
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./PROJECTS/SKYLINK.jpg" alt="Project:Sky Link" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">SkyLink Airlines</h2>
-                    <div class="btn_container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
-
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
-                    </div>
-                </div>
-
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./PROJECTS/SKYLINK.jpg" alt="Project:Zero Waste Hub" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Zero-Waste Hub</h2>
-                    <div class="btn_container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
-
-                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
-                    </div>
+                <div class="contact-right">
+                    <form id="contact-form" action="https://formspree.io/f/xvzerdqg" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button class="btn btn-color-1" type="submit">Send Message</button>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="Contact">
-        <h1 class="title">Contact Me</h1>
-        <p class="section_Text_p1">Let's work together</p>
+        </section>
 
-        <div class="contact-info-upper-container">
-            <div class="contact-left">
-                <h1>Get in touch</h1>
-                <p class="contact_text">I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to drop me a message!</p>
-                <div class="contact-container-icon">
-
-                    <a href="https://www.linkedin.com/in/tshegofatso-stone-390085347/" target="_blank" rel="noopener">
-                        <img src="./ICONS/LinkedIn.png" alt="LinkedIn Icon" class="Icon">
-                    </a>
-
-                    <a href="https://github.com/DelphyStone" target="_blank" rel="noopener">
-                        <img src="./ICONS/GitHub.png" alt="GitHub Icon" class="Icon">
-                    </a>
-                   
-                    <a href="mailto:tshegostone31@gmail.com">
-                        <img src="./ICONS/Email.png" alt="Email icon" class="Icon">
-                    </a>
-                </div>
-                
-            </div>
-
-            <div class="contact-right">
-                <form id="contact-form" action="https://formspree.io/f/xvzerdqg" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="6"  placeholder="Your Message" required></textarea>
-                    <button class="btn btn-color-1" type="submit">Send Message</button>        
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>Copyright &#169; 2026 <b>Delphy Stone</b>. All Rights Reserved.</p>
-    </footer>
-
+        <footer>
+            <p>Copyright &#169; 2026 <b>Delphy Stone</b>. All Rights Reserved.</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
