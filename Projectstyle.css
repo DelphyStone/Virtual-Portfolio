@@ -16,7 +16,6 @@
     padding: 1.5rem;
     margin-top: 2rem;
     flex: 0 1 350px;
-    background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     text-align: center;
@@ -25,7 +24,7 @@
 .color-container
 {
     border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
+    background: black;
 }
 
 .project-img
@@ -47,4 +46,9 @@
     gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.project-btn:disabled
+{
+    cursor: not-allowed;
 }

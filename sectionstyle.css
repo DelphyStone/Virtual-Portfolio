@@ -271,7 +271,7 @@ section
     padding-right:4px;
     white-space:nowrap;
     overflow:hidden;
-    animation: blink .7s infinite;
+    animation: blink .9s infinite;
 }
 
 @keyframes blink
